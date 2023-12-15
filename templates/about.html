@@ -1,0 +1,184 @@
+{% extends 'base.html' %}
+{% block title %} About Me {% endblock title %}
+{% block body %} 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha384-ezfp4l4yJvq8jS+5zwHjsrgw+5f0ltMsz2+l1FZOB6OHCtQ6vpEa9xhlzAtxgtUg" crossorigin="anonymous">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #000000;
+      color: #000000;
+      text-align: center;
+    }
+
+    #timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #000000;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .timeline-item {
+      position: relative;
+      padding: 40px;
+      margin: 40px 0;
+      border-radius: 10px;
+      background-color: #FFFFFF;
+      color: #000000;
+      text-align: left;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      transform: translateX(20px);
+      opacity: 0;
+      transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    }
+
+    .timeline-item.active {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+    .timeline-item img {
+      max-width: 100%;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .timeline-item i {
+      font-size: 48px;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    .timeline-item h2 {
+      font-size: 24px;
+      margin-top: 0;
+    }
+
+    .timeline-item p {
+      font-size: 16px;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const timelineItems = document.querySelectorAll(".timeline-item");
+
+      function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+
+      function handleScroll() {
+        timelineItems.forEach((item) => {
+          if (isInViewport(item)) {
+            item.classList.add("active");
+          }
+        });
+      }
+
+      window.addEventListener("scroll", handleScroll);
+      handleScroll(); // Check on page load
+    });
+  </script>
+</head>
+<body>
+  <div id="timeline">
+    <div class="timeline-item">
+      <i class="fas fa-baby"></i>
+      <h2>Birth</h2>
+      <p>On the day the universe unveiled its secrets, 18th August, 2004 became the overture to the whimsical tale of my existence, painted in the hues of stardust and cosmic delight.</p>
+    </div>
+
+    <div class="timeline-item">
+      <i class="fas fa-graduation-cap"></i>
+      <h2>Education</h2>
+      <p>From the whimsical nursery rhymes of Ira International School to the scholarly corridors of Royal Gondwana Public School, my academic sojourn unfolded. Now, a second-year voyage at the National Institute of Technology Karnataka continues, where equations become poetry and knowledge dances in the rhythm of innovation.</p>
+    </div>
+
+    <div class="timeline-item">
+      <i class="fas fa-trophy"></i>
+      <h2>Achievement</h2>
+      <p>Commencing my academic odyssey with the distinction of being the school topper in both 10th and 12th-grade CBSE board examinations, my journey culminated in the successful clearance of IIT-JEE and JEE Mains, securing admission to a top-tier engineering institution—an achievement emblematic of my commitment to scholarly excellence.</p>
+    </div>
+
+    <div class="timeline-item">
+      <i class="fas fa-heart"></i>
+      <h2>Personal Milestone</h2>
+      <p>Beyond the accolades and academic laurels, the most cherished triumph unfurled in the cocoon of self-discovery, where the tapestry of my character, woven with the moral fibers my parents imparted, became the true hallmark of success. In this symphony of growth, I find myself as the finest rendition of the values instilled, dancing towards success in the rhythm of my authentic self.
+
+</p>
+</div>
+
+<div class="timeline-item">
+  <i class="fas fa-hobbies"></i>
+  <h2>Hobbies</h2>
+  <p>In the kaleidoscope of my passions, I find solace in the strokes of a brush, the rhythm of dance, and the leisurely strolls through the vibrant streets of my college. Yet, among these joys, it is the art of immersing myself in the enchanting realms of novels that truly captures the essence of my leisure.
+
+    From the ethereal love story of Twilight to the adrenaline-fueled adventures of Divergent and the mythological landscapes of Percy Jackson, my literary journey unfolds like a mesmerizing tapestry. The pages have witnessed the dance of emotions in "It Ends With Us," the inception of tales in "It Starts With Us," and the thrilling twists of the "Twisted" series.
+    
+    In the quiet companionship of novels like "Her Soul to Take" and the captivating narratives of the "Billionaire" series, I've traversed worlds, each book an expedition into the extraordinary. With each turn of the page, I delve deeper into the magic woven by words, savoring the diverse hues of storytelling that paint the canvas of my literary sanctuary.</p>
+</div>
+
+
+    
+  </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .collage {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+      gap: 10px; /* Adjust the gap between photos */
+      max-width: 800px;
+      margin: 50px auto;
+    }
+
+    .collage img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="collage">
+    <img src="/static/a1.jpeg" alt="Photo 1">
+    <img src="/static/a2.jpg" alt="Photo 2">
+    <img src="/static/a3.png" alt="Photo 3">
+    <!-- Add more images as needed -->
+  </div>
+</body>
+</html>
+
+
+
+
+{% endblock body %}

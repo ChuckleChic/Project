@@ -1,0 +1,542 @@
+{% extends 'base.html' %}
+
+
+{% block title %} Portfolio {% endblock title %}
+{% block body %} 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha384-ezfp4l4yJvq8jS+5zwHjsrgw+5f0ltMsz2+l1FZOB6OHCtQ6vpEa9xhlzAtxgtUg" crossorigin="anonymous">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      text-align: center;
+    }
+
+    .contact-card {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      text-align: left;
+    }
+
+    .contact-card h2 {
+      color: #3498db;
+    }
+
+    .contact-details {
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+
+    .social-links {
+      margin-top: 30px;
+    }
+
+    .social-links a {
+      display: inline-block;
+      margin: 0 10px;
+      font-size: 24px;
+      color: #3498db;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="contact-card">
+    <h2>Contact Details</h2>
+
+    <div class="contact-details">
+      <p><strong>Email:</strong> priya18jha08@gmail.com</p>
+      <p><strong>Phone:</strong> 8080868357</p>
+      <p><strong>Location:</strong> Nagpur,India</p>
+    </div>
+
+    <div class="social-links">
+      <a href="https://github.com/ChuckleChic" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/priya_jha8642/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/Priya Jha/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <!-- Add more social links as needed -->
+    </div>
+  </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha384-ezfp4l4yJvq8jS+5zwHjsrgw+5f0ltMsz2+l1FZOB6OHCtQ6vpEa9xhlzAtxgtUg" crossorigin="anonymous">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      text-align: center;
+    }
+
+    .education-card {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      text-align: left;
+    }
+
+    .education-card h2 {
+      color: #3498db;
+    }
+
+    .education-details {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .education-details .left,
+    .education-details .right {
+      width: 45%;
+    }
+
+    .education-details i {
+      font-size: 24px;
+      color: #3498db;
+    }
+
+    .education-details p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="education-card">
+    <h2>Education</h2>
+
+    <div class="education-details">
+      <div class="left">
+        <i class="fas fa-graduation-cap"></i>
+        <h3>Bachelor's Degree</h3>
+        <p>National Institute of Technology Karnataka, Surathkal<br>Graduation Year: 2026</p>
+      </div>
+
+      <div class="right">
+        <i class="fas fa-book"></i>
+        <h3>Major in</h3>
+        <p>Mechanical Engineering</p>
+        <h3>Minor in</h3>
+        <p>Information Technology</p>
+      </div>
+    </div>
+
+
+      <div class="education-details">
+        <div class="left">
+          <i class="fas fa-graduation-cap"></i>
+          <h3>High School</h3>
+          <p>Royal Gondwana Public School<br>Year: 2022</p>
+          <p>Ira International School<br>Year: 2020</p>
+        </div>
+
+      <div class="right">
+        <i class="fas fa-medal"></i>
+        <h3>High School Achievements</h3>
+        <p>JEE Mains  : 98 percentile </p>
+        <p>12th boards : 94.2% </p>
+        <p>10th boards : 96% </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha384-ezfp4l4yJvq8jS+5zwHjsrgw+5f0ltMsz2+l1FZOB6OHCtQ6vpEa9xhlzAtxgtUg" crossorigin="anonymous">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      text-align: center;
+    }
+
+    .club-card {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      text-align: left;
+    }
+
+    .club-card h2 {
+      color: #3498db;
+    }
+
+    .club-details {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .club-details .left,
+    .club-details .right {
+      width: 45%;
+    }
+
+    .club-details i {
+      font-size: 24px;
+      color: #3498db;
+    }
+
+    .club-details p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="club-card">
+    <h2>Clubs and Extracurricular Activities</h2>
+
+    <div class="club-details">
+      <div class="left">
+        <i class="fas fa-users"></i>
+        <h3>IET</h3>
+        <p>Student Member in TORSION , VENTURE <br>Duration: 2022 - 2026</p>
+      </div>
+
+      <div class="right">
+        <i class="fas fa-comment"></i>
+        <h3>Club Achievements</h3>
+        <p>Engaged actively in all club events and activities, contributing effort to ensure the success of some initiatives. Provided constructive suggestions to enhance overall club functionality and impact. </p>
+      </div>
+    </div>
+
+    <div class="club-details">
+      <div class="left">
+        <i class="fas fa-users"></i>
+        <h3>BAJA NITK RACING</h3>
+        <p>Executive member <br>Duration: 2022 - 2026</p>
+      </div>
+
+      <div class="right">
+        <i class="fas fa-comment"></i>
+        <h3>Club Achievements</h3>
+        <p>Dedicated member of the Powertrain Subsystem, actively contributing to both the manufacturing and design processes of the car.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha384-ezfp4l4yJvq8jS+5zwHjsrgw+5f0ltMsz2+l1FZOB6OHCtQ6vpEa9xhlzAtxgtUg" crossorigin="anonymous">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      text-align: center;
+    }
+
+    .projects-card {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      text-align: left;
+    }
+
+    .projects-card h2 {
+      color: #3498db;
+    }
+
+    .project-details {
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+
+    .project {
+      margin-top: 30px;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+    }
+
+    .project h3 {
+      color: #3498db;
+    }
+
+    .project p {
+      margin-top: 10px;
+    }
+
+    .project-icons {
+      margin-top: 10px;
+    }
+
+    .project-icons a {
+      display: inline-block;
+      margin: 0 10px;
+      font-size: 18px;
+      color: #3498db;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="projects-card">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>Scotch Yoke Mechanism</h3>
+      <p>Designed and crafted a functional model of the Scotch Yoke Mechanism, showcasing its practical application in a hand pump. Presented the project with clear articulation and demonstration.</p>
+
+      <div class="project-icons">
+        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>MATLAB Project</h3>
+      <p>Conducted position, velocity, acceleration, and force analysis of a beam engine and oscillating cylinder through MATLAB, demonstrating proficiency in engineering analysis and computational tools.</p>
+
+      <div class="project-icons">
+        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+    <div class="project">
+        <h3>Web Development</h3>
+        <p>Developed a comprehensive portfolio website utilizing Django, Git, GitHub, and various other tech stacks, showcasing proficiency in web development and version control.</p>
+  
+        <div class="project-icons">
+          <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+  </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha384-ezfp4l4yJvq8jS+5zwHjsrgw+5f0ltMsz2+l1FZOB6OHCtQ6vpEa9xhlzAtxgtUg" crossorigin="anonymous">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      text-align: center;
+    }
+
+
+
+    .skills-card {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      text-align: left;
+    }
+
+    .skills-card h2 {
+      color: #3498db;
+    }
+
+    .skill-details {
+        margin-top: 20px;
+        line-height: 1.6;
+        padding-bottom: 20px; /* Add padding to separate skill details */
+      }
+
+      .skill-details p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-top: 0; /* Remove default top margin for paragraphs */
+      }
+
+    .skill-details {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .skill-details .left,
+    .skill-details .right {
+      width: 45%;
+    }
+
+    .skill-details i {
+      font-size: 24px;
+      color: #3498db;
+    }
+
+    .skill-details p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="skills-card">
+    <h2>Skills</h2>
+
+    <div class="skill-details">
+      <div class="left">
+        <i class="fas fa-laptop-code"></i>
+        <h3>Programming Languages</h3>
+        <p>DSA in CPP , Python , MATLAB.</p>
+      </div>
+
+      <div class="right">
+        <i class="fas fa-code"></i>
+        <h3>Frameworks</h3>
+        <p>Django</p>
+      </div>
+    </div>
+
+    <div class="skill-details">
+      <div class="left">
+        <i class="fas fa-database"></i>
+        <h3>CAD</h3>
+        <p>Fusion 360 , Ansys.</p>
+      </div>
+
+      <div class="right">
+        <i class="fas fa-cogs"></i>
+        <h3>Tools and Technologies</h3>
+        <p>Git, VSCode, GITHUB</p>
+      </div>
+    </div>
+
+    <div class="other-details">
+        <div class="left">
+          <i class="fas fa-database"></i>
+          <h3>Other</h3>
+          <p>Proficient speaker and communicator with strong writing skills, adept at expressing thoughts effectively. Demonstrates leadership and teamwork qualities alongside upholding strong moral values.</p>
+        </div>
+  </div>
+</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha384-ezfp4l4yJvq8jS+5zwHjsrgw+5f0ltMsz2+l1FZOB6OHCtQ6vpEa9xhlzAtxgtUg" crossorigin="anonymous">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      text-align: center;
+    }
+
+    .personal-corner {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      text-align: left;
+    }
+
+    .personal-corner h2 {
+      color: #3498db;
+    }
+
+    .description {
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+
+    .social-icons {
+      margin-top: 30px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin: 0 10px;
+      font-size: 24px;
+      color: #3498db;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="personal-corner">
+    <h2>Meet Priya Jha</h2>
+
+    <div class="description">
+      <p>
+        Hello there! I am an individual driven by immense ambition and a strong work ethic, consistently immersing myself in the ever-evolving realms of technology. Whether it's tackling a project or undertaking any work, I invest my unwavering dedication, giving nothing less than my absolute best—my commitment is always at 100 percent.
+
+        Work ethics hold paramount importance in my professional philosophy, underlining the significance of integrity, diligence, and a commitment to excellence. My eagerness to learn is insatiable, and I thrive on embracing new challenges that allow me to explore diverse fields. As a quick learner, I find joy in navigating uncharted territories, continuously broadening my skill set and knowledge base.
+        
+        In the vast landscape of technology, I see endless possibilities, and I am enthusiastic about contributing my skills and passion to create meaningful impacts.
+      </p>
+      <p>
+        Thank you for considering my profile.
+      </p>
+    </div>
+
+    <div class="social-icons">
+      <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </div>
+</body>
+</html>
+
+{% endblock body %}
