@@ -1,11 +1,18 @@
 from django.db import models
+from django.contrib.auth.models import User
+STATUS = ((0, "Draft"), (1, "Published"))
 
-# Create your models here.
-class Contact(models.Model):
-    name = models.CharField(max_length=122)
-    email = models.CharField(max_length=122)
-    desc = models.TextField()
-    date = models.DateField()
+class Post(models.Model):
+    title = models.CharField(max_length=200, unique=True)
+    slug = models.SlugField(max_length=200, unique = True)
+    author = models.ForeignKey(User, on_elete=models.CASCADE, related_name='blogs_post')
+    created_on = models.DataTimeField(auto_now_add=True)
+    updated_on = models.DataTimeField(auto_now_add=True)
+    content = models.TextField()
+    status = models.IntegerField(choices = STATUS, default=0)
 
-def __str__(self):
-    return self.name
+    class Meta:
+        ordering = ['-created_on']
+
+    def __str__(self):
+        return self.title
