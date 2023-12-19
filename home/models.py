@@ -6,8 +6,8 @@ class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique = True)
     author = models.ForeignKey(User, on_elete=models.CASCADE, related_name='blogs_post')
-    created_on = models.DataTimeField(auto_now_add=True)
-    updated_on = models.DataTimeField(auto_now_add=True)
+    created_on = models.DateTimeField(auto_now_add=True)
+    updated_on = models.DateTimeField(auto_now_add=True)
     content = models.TextField()
     status = models.IntegerField(choices = STATUS, default=0)
 
